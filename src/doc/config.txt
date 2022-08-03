@@ -1,0 +1,56 @@
+* Pre-requisites:
+  - win: 7_x64_sp1
+  - node: 14.17.6
+  - npm: 6.14.15
+
+* Create:
+  >npm create vite
+  ? Project name: vite_vanilla_ts-todos
+  ? Select a framework: vanilla
+  ? Select a vaiant: vanilla-ts
+  
+  Done. Now run:
+
+    cd vite_vanilla_ts-todos
+    npm install
+    npm run dev
+
+* Open folder with vs-code & open terminal
+
+* Install dependecies (node_modules):
+  > npm install|i 
+
+* install styles for Vite tailwindcss:
+  > npm install -D tailwindcss postcss autoprefixer  
+
+* create tailwind.config.cjs & postcss.config.cjs  
+  > npx tailwindcss init -p
+  
+* edit tailwind.config.cjs on section 'content':
+
+  ...
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}"
+  ],
+  ...
+    
+* edit file 'style.css' on top:
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+* add extension on vs-code 'Tailwind CSS intellisense'
+
+* run the server:
+  > npm run dev  
+  
+  click on -> Local: http://127.0.0.1:5173
+
+* install toastify alerts:
+  > npm install --save toastify-js  
+  > npm install @types/toastify-js
+
+  import 'toastify-js/src/toastify.css'
+  import Toastify from 'toastify-js' // npm install @types/toastify-js
